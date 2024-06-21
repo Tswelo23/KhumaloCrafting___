@@ -1,0 +1,63 @@
+﻿@model IEnumerable<KhumaloCrafting___.Models.Products>
+
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<div class="container">
+    <h1 class="text-center mb-4">Search Results</h1>
+
+    <!-- Check if there is any item in the model -->
+    @if (Model != null && Model.Any())
+    {
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="@Url.Content(item.ImageUrl)" alt="@item.Name" style="width: 100px; height: auto;" />
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Category)</td>
+                        <td>
+                            @if (item.Availability)
+                            {
+                                <span class="text-success">Available</span>
+                            }
+                            else
+                            {
+                                <span class="text-danger">Unavailable</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Button outside the table for better accessibility and layout -->
+        <div class="mt-2">
+            <a asp-action="MyWork" asp-controller="Home" class="btn btn-primary">Back to WorkPage</a>
+        </div>
+    }
+    else
+    {
+        <p class="text-center">No results found.</p>
+        <div class="text-center mt-2">
+            <a asp-action="MyWork" asp-controller="Home" class="btn btn-secondary">Back to WorkPage</a>
+        </div>
+    }
+</div>

@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background-color: #f9f9f9;
+            padding: 100px 0;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            margin-top: 0;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+            .btn:hover {
+                background-color: #555;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+
+
+<div class="container-fluid bg-dark text-light py-5">
+    <div class="row">
+        <div class="col-lg-6 d-flex align-items-center">
+            <div class="text-center text-lg-start">
+                <h1 class="display-4 mb-4">Welcome to KhumaloHandCrafts</h1>
+                <p class="lead mb-4">Explore Distinctive HandCraft Materials</p>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card border-0 shadow text-dark bg-light">
+                <div class="card-body text-center">
+                    <h2 class="card-title mb-4">Exquisite Handcrafted Products</h2>
+                    <p class="card-text">
+                        At KhumaloHandCrafts, we believe in the beauty of traditional craftsmanship and the unique character of wood. Each of our handpicked materials is sourced with care, ensuring sustainability and respect for the environment. Whether you're a seasoned woodworker or just beginning your journey into the world of handcrafting, our diverse selection offers something for every project and skill level.
+
+                        From finely carved hardwoods to rustic reclaimed lumber, our inventory showcases the rich diversity of wood species and textures, allowing you to explore endless possibilities in your creations. Whether you're crafting furniture, sculptures, jewelry, or home decor, KhumaloHandCrafts provides the building blocks for your imagination to flourish.
+                    </p>
+                    <a href="@Url.Action("AboutUs", "Home")" class="btn btn-custom">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12">
+
+           
+            <img src="~/images/cover.jpg" width="500px" height="300px" />
+
+            <img src="~/images/coverc.jpeg" width="500px" height="300px" />
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+<!-- Add more content sections as needed -->

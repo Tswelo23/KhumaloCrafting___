@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-us {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 8px;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        ul.link-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .link-item {
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+            .link-item a {
+                display: block;
+                text-decoration: none;
+                color: #333;
+            }
+
+            .link-item img {
+                width: 318px;
+                height: 159px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-bottom: 5px;
+            }
+    </style>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <section class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>
+                    Welcome to KhumaloHandCrafts, where passion meets craftsmanship in every meticulously curated piece of woodwork. Established in 2024, KhumaloHandCrafts was born out of a deep appreciation for the artistry and beauty inherent in handcrafted creations. At KhumaloHandCrafts, we believe in the power of tradition, craftsmanship, and sustainability. Our journey began with a vision to celebrate the timeless appeal of woodworking while embracing the unique character of natural materials. Every piece in our collection tells a story of dedication, creativity, and reverence for the environment.
+                </p>
+                <p>
+                    With a commitment to excellence, we meticulously source the finest quality wood materials from sustainable forests, ensuring both the longevity of our craft and the preservation of our planet. Each piece of wood is handpicked for its unique grain, texture, and character, allowing us to offer a diverse selection of materials that inspire creativity and elevate craftsmanship. More than just a marketplace, KhumaloHandCrafts is a community of artisans, hobbyists, and enthusiasts who share a passion for woodworking and the handmade. We're dedicated to fostering creativity, sharing knowledge, and supporting each other on our crafting journeys.
+                </p>
+                <p>
+                    Whether you're a seasoned woodworker or just beginning to explore the world of handcrafting, KhumaloHandCrafts is here to empower you to unleash your creativity and bring your vision to life. Join us in celebrating the beauty of handmade craftsmanship and the enduring allure of natural materials.
+
+                    Thank you for being a part of our journey.
+                </p>
+            </div>
+            <ul class="link-list">
+
+                <li class="link-item">
+                    <div class="image-container">
+                        <img src="~/images/about.jpg" alt="About Us Image" width="300px" height="200px" />
+
+
+
+                        <img src="~/images/tissue.jpg" width="300px" height="200px align=" right" />
+
+                        </a>
+                </li>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+
